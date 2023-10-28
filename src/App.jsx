@@ -1,15 +1,14 @@
+import React from 'react';
+import Main from './components/Main';
 
-import Main from "./components/Main"
- 
 function App() {
-
   return (
-    <>
-        <div className="  bg-slate-900 h-screen  ">
-        <Main/>
-        </div>
-    </>
-  )
+    <div className="h-screen bg-cover bg-center" style={{ backgroundImage: "url('/assets/fondoClimaApp.png')" }}>
+      <div className="flex items-center justify-center h-full">
+        <Main />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
