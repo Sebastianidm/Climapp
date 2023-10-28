@@ -20,7 +20,7 @@ function Form({ datosLlamado, componente }) {
   };
 
   return (
-    <div className="container max-w-md bg-cyan-800 border border-gray-200 rounded-lg shadow p-8 mt-5 mb-5">
+    <div className="container border-rose-200 max-w-md bg-rose-200 border  rounded-lg shadow p-8 mt-5 mb-5">
       <a href="#">
         <img
           className="rounded-t-lg"
@@ -35,15 +35,15 @@ function Form({ datosLlamado, componente }) {
             name="ciudad"
             id="ciudad"
             placeholder="Escribe una ciudad"
-            className="w-full sm:w-2/3 text-center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 mt-2 mb-2 mx-2"
+            className="w-full sm:w-2/3 text-center bg-gray-50 border border-gray-300 placeholder:text-rose-800 text-rose-800 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 mt-2 mb-2 mx-2"
             onChange={handleChange}
           />
           <select
-            className="w-full sm:w-1/3 text-center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 mt-2 mb-2 mx-2"
+            className="w-full sm:w-1/3 text-center bg-gray-50 border border-gray-300 text-rose-800 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 mt-2 mb-2 mx-2"
             onChange={handleChange}
             name="pais"
           >
-              <option value="CL">Chile</option>
+            <option value="CL">Chile</option>
             <option value="MX">Mexico</option>
             <option value="AR">Argentina</option>
             <option value="CO">Colombia</option>
@@ -61,15 +61,15 @@ function Form({ datosLlamado, componente }) {
             <option value="URY">Uruguay</option>
           </select>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center bg-rose-500 rounded ">
           <input
-            className="w-full px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 mt-2 mb-2"
+            className="w-full px-3 py-2 text-sm font-medium text-center text-white bg-rose-500 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 mt-2 mb-2"
             type="submit"
             value="Buscar Clima"
           />
         </div>
       </form>
-      <div className="flex justify-center text-center mb-2 mt-2 text-2xl tracking-tight text-white">
+      <div className="flex justify-center text-center mb-2 mt-2 text-2xl tracking-tight text-rose-700">
         {componente}
       </div>
     </div>
